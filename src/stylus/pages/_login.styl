@@ -1,0 +1,66 @@
+#login
+  width 100%
+  height 100vh
+  display flex
+  align-items center
+  justify-content center
+  background-image url(assets/img/bg-login.jpg)
+  background-position center
+  background-size cover
+  position relative
+
+  &>div
+    position relative
+    z-index 2
+
+  img
+    width 400px
+    margin-bottom 40px
+
+  a
+    display table
+    margin 0 auto
+    background-color black
+    color white
+    padding 5px 30px
+    border-radius 20px
+    font-size 18px
+
+    &:hover
+      background-color #8bc34a
+
+  &>span
+    position absolute
+    top 0
+    left 0
+    width 100%
+    height 100%
+    z-index 1
+    background-size cover
+    background-position center
+    opacity 0
+    transition 1s
+
+    &:nth-child(2)
+      background-image url(assets/img/bg-login-3.png)
+      animation  bg-login 4s infinite
+
+    &:nth-child(3)
+      background-image url(assets/img/bg-login-1.png)
+      animation  bg-login 6s infinite
+      animation-delay 1s
+
+    &:nth-child(4)
+      background-image url(assets/img/bg-login-2.png)
+      animation  bg-login 5s infinite
+      animation-delay 2s
+
+@keyframes bg-login
+  0%
+    opacity 0
+  40%
+    opacity 1
+  60%
+    opacity 1
+  100%
+    opacity 0
