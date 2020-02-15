@@ -1,3 +1,4 @@
+import { ColorPickComponent } from './../../shared/color-pick/color-pick.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -8,7 +9,7 @@ import { QuartoComponent } from './quarto/quarto.component';
 
 
 @NgModule({
-  declarations: [PainelComponent, MenuComponent, QuartoComponent],
+  declarations: [PainelComponent, MenuComponent, QuartoComponent, ColorPickComponent],
   imports: [
     CommonModule,
     PainelRoutingModule
