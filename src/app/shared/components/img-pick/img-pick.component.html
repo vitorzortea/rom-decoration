@@ -1,0 +1,9 @@
+<ul class="img-picker">
+    <li
+        *ngFor="let opcao of opcoes"
+        (click)="selectImg(defaultPath+opcao.path)"
+        title="{{opcao.nome}}">
+        <span
+            [ngStyle]="{'background-image': 'url('+defaultPath+opcao.path+')'}"></span>
+    </li>
+</ul>

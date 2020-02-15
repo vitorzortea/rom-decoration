@@ -1,17 +1,25 @@
-<header>
-    <img src="assets/svg/logo.svg" alt="Room Decoration">
-    <nav>
-        <a>Estrutura</a>
-        <a>Moveis</a>
-    </nav>
-</header>
-<ul>
-    <li *ngFor="let estrutura of estruturas.get()">
-        <h2>
-            <span>{{estrutura.local}}</span>
-            <i class="fas fa-plus-circle"></i>
-            <i class="fas fa-minus-circle"></i>
-        </h2>
-        <app-color-pick [local]="estrutura"></app-color-pick>
-    </li>
-</ul>
+<div id="menu">
+    <header>
+        <img src="assets/svg/logo.svg"
+            alt="Room Decoration">
+        <nav>
+            <a>Estrutura</a>
+            <a>Moveis</a>
+        </nav>
+    </header>
+    <ul>
+        <li *ngFor="let estrutura of estruturas.estruturaGet()">
+            <h2>
+                <span>{{estrutura.local}}</span>
+                <i class="fas fa-plus-circle"></i>
+                <i class="fas fa-minus-circle"></i>
+            </h2>
+            <app-color-pick [local]="estrutura"></app-color-pick>
+            <app-img-pick
+                [local]="estrutura"
+                [opcoes]="estruturas.wallPaperGet()"
+                defaultPath="assets/img/papeis/">
+            </app-img-pick>
+        </li>
+    </ul>
+</div>
