@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EstruturaService } from 'src/app/shared/services/estrutura.service';
 
 @Component({
   selector: 'app-quarto',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuartoComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public estruturas: EstruturaService
+  ) { }
 
   ngOnInit() {
+    console.log(this.estruturas);
   }
 
 }

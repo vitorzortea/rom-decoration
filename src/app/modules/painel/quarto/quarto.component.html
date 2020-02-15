@@ -1,1 +1,3 @@
 <img src="assets/img/base.png" alt="Seu Quarto">
+<span *ngFor="let estrutura of estruturas.get()" class="{{estrutura.slug}}"
+    [ngStyle]="{'background-color': estrutura.cor, 'background-image': estrutura.papel}"></span>

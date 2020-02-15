@@ -1,3 +1,4 @@
+import { EstruturaService } from './../../shared/services/estrutura.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PainelComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public estrutura: EstruturaService
+  ) { }
 
   ngOnInit() {
   }
