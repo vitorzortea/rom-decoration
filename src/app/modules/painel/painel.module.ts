@@ -3,10 +3,12 @@ import { CommonModule } from '@angular/common';
 
 import { PainelRoutingModule } from './painel-routing.module';
 import { PainelComponent } from './painel.component';
+import { MenuComponent } from './menu/menu.component';
+import { QuartoComponent } from './quarto/quarto.component';
 
 
 @NgModule({
-  declarations: [PainelComponent],
+  declarations: [PainelComponent, MenuComponent, QuartoComponent],
   imports: [
     CommonModule,
     PainelRoutingModule

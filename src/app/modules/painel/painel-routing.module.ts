@@ -5,7 +5,7 @@ import { PainelComponent } from './painel.component';
 
 const routes: Routes = [
   {
-    path: 'painel',
+    path: '',
     component: PainelComponent
   }
 ];
