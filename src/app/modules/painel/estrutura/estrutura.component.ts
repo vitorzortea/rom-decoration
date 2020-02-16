@@ -18,7 +18,6 @@ export class EstruturaComponent implements OnInit {
   sanfona(index) {
     const allList = document.querySelectorAll(`.list-menu>li`);
     const selectList = document.querySelector(`.list-menu>li:nth-child(${index + 1}n)`);
-    console.log(selectList)
 
     allList.forEach((e, index2) => {
       if (index != index2) {

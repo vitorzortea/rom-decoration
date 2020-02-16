@@ -1,1 +1,16 @@
-<p>moveis works!</p>
+<ul class="list-menu list-moveis">
+    <li *ngFor="let movel of moveis.allMoveis; index as i;">
+        <h2 (click)="sanfona(i)">
+            <span>{{movel.categoria}}</span>
+            <i class="fas fa-plus-circle"></i>
+            <i class="fas fa-minus-circle"></i>
+        </h2>
+        <div>
+            <app-img-pick
+                [local]="moveis.selectMoveis[i]"
+                [opcoes]="movel.moveis"
+                defaultPath="assets/img/moveis/">
+            </app-img-pick>
+        </div>
+    </li>
+</ul>

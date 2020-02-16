@@ -12,31 +12,31 @@ export class EstruturaService {
       local: 'Parede Frontal',
       slug: 'parede-f',
       cor: 'transparent',
-      papel: ''
+      url: ''
     },
     {
       local: 'Parede Lateral Direita',
       slug: 'parede-d',
       cor: 'transparent',
-      papel: ''
+      url: ''
     },
     {
       local: 'Parede Lateral Esquerda',
       slug: 'parede-e',
       cor: 'transparent',
-      papel: ''
+      url: ''
     },
     {
       local: 'Fundação',
       slug: 'piso',
       cor: 'transparent',
-      papel: ''
+      url: ''
     },
     {
       local: 'Teto',
       slug: 'teto',
       cor: 'transparent',
-      papel: ''
+      url: ''
     },
   ];
 

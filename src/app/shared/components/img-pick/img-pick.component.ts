@@ -16,7 +16,14 @@ export class ImgPickComponent implements OnInit {
   }
 
   selectImg(path) {
-    this.local.papel = path;
+    this.local.url = path;
+    console.log(this.local)
+  }
+  pathGeneration(path) {
+    if (path) {
+      return `${this.defaultPath}${path}`
+    }
+    return ''
   }
 
 }
