@@ -1,0 +1,17 @@
+<ul class="list-menu list-estrutura">
+    <li *ngFor="let estrutura of estruturas.estruturaGet(); index as i;">
+        <h2 (click)="sanfona(i)">
+            <span>{{estrutura.local}}</span>
+            <i class="fas fa-plus-circle"></i>
+            <i class="fas fa-minus-circle"></i>
+        </h2>
+        <div>
+            <app-color-pick [local]="estrutura"></app-color-pick>
+            <app-img-pick
+                [local]="estrutura"
+                [opcoes]="estruturas.wallPaperGet()"
+                defaultPath="assets/img/papeis/">
+            </app-img-pick>
+        </div>
+    </li>
+</ul>

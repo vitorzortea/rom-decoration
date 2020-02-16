@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { EstruturaService } from 'src/app/shared/services/estrutura.service';
 
 @Component({
   selector: 'app-menu',
@@ -8,9 +7,7 @@ import { EstruturaService } from 'src/app/shared/services/estrutura.service';
 })
 export class MenuComponent implements OnInit {
 
-  constructor(
-    public estruturas: EstruturaService
-  ) { }
+  constructor() { }
 
   ngOnInit() {
   }

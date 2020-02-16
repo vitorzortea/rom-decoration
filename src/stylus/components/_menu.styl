@@ -1,0 +1,87 @@
+#menu
+    background #cccccc
+    min-height 100%
+
+    header
+        background white
+        
+        img
+            padding: 20px 30px
+
+        nav
+            display flex
+            width 100%
+
+            a
+                flex auto
+                width calc(50% - 2px)
+                text-align center
+                padding 10px
+                margin 0 1px
+                color #9a9a9a
+                font-size 14px
+                text-transform uppercase
+                -webkit-text-stroke 0.1px
+                transition 0.5s 
+
+                &:hover,&.active
+                    border-radius 10px 10px 0 0
+                    background #eeeeee
+                    color #313131
+                    -webkit-text-stroke 1px
+
+                &.active
+                    background #cccccc
+
+    .list-menu>li
+        border solid 1px #999999
+        margin 10px 5px
+        border-radius 10px
+        background rgba(255, 255, 255, 0.8)
+        overflow hidden
+
+        &>h2
+            padding 5px
+            font-weight normal
+            font-size 14px
+            display flex
+            align-items center
+            cursor pointer
+
+            &:hover
+                background-color #8bc34a
+                color white
+
+            span
+                flex auto
+
+            i
+                color #8bc34a 
+
+            &:hover i
+                color white
+
+            .fa-minus-circle
+                display none
+
+        &>div
+            overflow hidden
+            height 0
+            opacity 0
+            transition 0.5s
+
+        &.active>h2
+            background-color #8bc34a
+            color white
+            
+            .fa-minus-circle
+                color white
+                display table
+            
+            .fa-plus-circle
+                display none
+
+        &.active>div
+            overflow auto
+            height 150px
+            opacity 1
